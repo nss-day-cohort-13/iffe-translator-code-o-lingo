@@ -39,3 +39,7 @@ var translateButton = document.getElementById('button').addEventListener("click"
 
 // users translated output
 var userOutput = document.getElementById('output');
+
+function printTranslation(translation) {
+	userOutput.innerHTML = "<p>" + translation + "</p>";
+}
