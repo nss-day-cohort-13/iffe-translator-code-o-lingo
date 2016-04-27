@@ -43,3 +43,18 @@ var userOutput = document.getElementById('output');
 function printTranslation(translation) {
 	userOutput.innerHTML = "<p>" + translation + "</p>";
 }
+
+// Translate function
+
+function translate(input, language) {
+		var output = "";
+		for (var i = 0; i < input.length; i++) {
+			var current = input[i].toLowerCase();
+			if (current === "") {
+				output;
+			} else {
+					output += language[current] + " ";
+				}
+		printTranslation(output);
+		}
+}
