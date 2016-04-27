@@ -10,7 +10,16 @@ var Lang = (function() {
 		stuck: "fast",
 		in: "i",
 		a: "et",
-		monarchy: "monarki"
+		monarchy: "monarki",
+		eat: "Spise",
+		some: "nogle",
+		french: "pommes",
+		fries: "frites",
+		on: "pa",
+		the: "den",
+		american: "amerikanske",
+		prison: "faengselssystem",
+		system: ""
 	};
 
 	return {
