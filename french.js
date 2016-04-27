@@ -1,9 +1,9 @@
 var Lang = (function(augFrench) {
 
     var frenchGreeting = {
-    "happy":"heureux", 
-    "bastille":"bastille", 
-    "day":"journee", 
+    "happy":"heureux",
+    "bastille":"bastille",
+    "day":"journee",
     "for":"pour",
     "someone":"quelqu'un",
     "still":"encore",
@@ -19,13 +19,13 @@ var Lang = (function(augFrench) {
 			var current = input[i];
 			output += frenchGreeting[current] + " ";
 			printTranslation(output);
-		  };	
+		  };
 	  }
 
 return augFrench;
 
 }(Lang));
 
-    
 
-    
+
+
