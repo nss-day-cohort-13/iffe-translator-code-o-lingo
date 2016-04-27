@@ -1,11 +1,11 @@
 var Lang = (function(augSpanish) {
 
-// Happy Bastille Day to someone still stuck in a monarchy
+  // Happy Bastille Day to someone still stuck in a monarchy
 
   var spanishGreeting = {
-    Happy: "Feliz",
-    Bastille: "Bastilla",
-    Day: "Día",
+    happy: "Feliz",
+    bastille: "Bastilla",
+    day: "Día",
     to: "a",
     someone: "alguien",
     still: "todavía",
@@ -14,16 +14,9 @@ var Lang = (function(augSpanish) {
     a: "una",
     monarchy: "monarquía"
   };
-
-  augSpanish.transSpanish = function(input) {
-    var output = "";
-    for (var i = 0; i < input.length; i++) {
-      var current = input[i].toLowerCase();
-      output += spanishGreeting[current] + " ";
-      printTranslation(output);
-    };
+  return {
+    augSpanish.transSpanish = function(input) {
+      translate(input, spanishGreeting);
+    }
   }
-
-  return augSpanish;
-
 }(Lang));
