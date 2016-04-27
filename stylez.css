@@ -1,5 +1,4 @@
 
-
 /*-__________ Top-level styles __________-*/
 
 * {
@@ -15,25 +14,31 @@ body {
 }
 
 h1 {
-	font-size: 1.4em;
+	font-size: 2.2em;
 	font-weight: 700;
+	margin: 20px 0;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #fff;
+	color: #FFE066;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: 600;
 	margin: 20px 10px;
 }
 
-ul {
-	list-style-type: none;
-}
-
-li {
-	margin: 10px;
-	margin-left: 0;
+p {
+	margin: 20px 10px;
+	margin-bottom: 20px;
 }
 
 
 /*-__________ Main content area styles __________-*/
 
 #content {
-	background: #30638E;
+	background: #3d8bbe;
 	width: 50%;
 	height: 700px;
 	margin: 20px auto;
@@ -42,12 +47,14 @@ li {
 }
 
 textarea {
-	width: 50%;
+	width: 405px;
 	height: 100px;
+	margin: 20px 10px;
+	display: block;
+	border-radius: 5px;
 }
 
 label {
-	display: block;
 	margin: 20px 10px;
 }
 
@@ -56,12 +63,16 @@ input[type="radio"] {
 }
 
 #button {
+	background: #FFE066;
 	display: block;
-	margin: 25px auto;
+	margin: 50px auto;
 	font-size: 1.2em;
+	letter-spacing: .2em;
 	width: 150px;
 	height: 60px;
 	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.2);
 }
 
 #output {
@@ -72,7 +83,5 @@ input[type="radio"] {
 	padding: 10px;
 	border-radius: 5px;
 	width: 100%;
-	height: 100px;
+	height: 150px;
 }
-
-

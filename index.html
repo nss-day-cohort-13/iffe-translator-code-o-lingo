@@ -8,20 +8,35 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-		<div id="content">
-			<h1>Translator</h1>
-			<ul>
-				<li>Happy Bastille Day to Someone Still Stuck in a Monarchy</li>
-				<li>Happy Bastille Day to Someone Still Stuck in a Monarchy</li>
-				<li>Happy Bastille Day to Someone Still Stuck in a Monarchy</li>
-			</ul>
-			<textarea id="message" placeholder="Type Your Phrase Here"></textarea>
-			<label for="french"><input type="radio" name="userLang" id="french" value="french">French</label>
-			<label for="danish"><input type="radio" name="userLang" id="danish" value="danish">Danish</label>
-			<label for="spanish"><input type="radio" name="userLang" id="spanish" value="spanish">Spanish</label>
-			<button type="button" id="button">Translate</button>
-			<div id="output"></div>
-		</div>
+	<div id="content"> <!-- Begin div id #content -->
+
+		<h1>Translator</h1>
+
+		<h2>Choose from the following phrases:</h2>
+
+		<p>Happy Bastille Day to someone still stuck in a monarchy</p>
+
+		<textarea id="message" placeholder="Type Your Phrase Here"></textarea>
+
+		<section class="radios"> <!-- Section class .radios holds all radio buttons in one block -->
+			<label for="french">
+				<input type="radio" name="userLang" id="french" value="french">French
+			</label>
+
+			<label for="danish">
+				<input type="radio" name="userLang" id="danish" value="danish">Danish
+			</label>
+
+			<label for="spanish">
+				<input type="radio" name="userLang" id="spanish" value="spanish">Spanish
+			</label>
+		</section>
+
+		<button type="button" id="button">Translate</button>
+
+		<div id="output"></div>
+
+	</div> <!-- End div id #content -->
 
 	<script src="danish.js"></script>
 	<script src="french.js"></script>
