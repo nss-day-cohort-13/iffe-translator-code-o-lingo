@@ -4,7 +4,7 @@ var Lang = (function(augFrench) {
     "happy":"heureux",
     "bastille":"bastille",
     "day":"journee",
-    "for":"pour",
+    "to":"a",
     "someone":"quelqu'un",
     "still":"encore",
     "stuck":"coince",
@@ -13,19 +13,10 @@ var Lang = (function(augFrench) {
     "monarchy":"la monarchie"
   	};
 
-  	augFrench.transFrench = function(input) {
-			var output = "";
-			for (var i = 0; i < input.length; i++) {
-			var current = input[i];
-			output += frenchGreeting[current] + " ";
-			printTranslation(output);
-		  };
-	  }
+  	augFrench.transFrench = function (input) {
+        translate(input, frenchGreeting);
+        }
 
 return augFrench;
 
 }(Lang));
-
-
-
-
