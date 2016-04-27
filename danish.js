@@ -1,9 +1,8 @@
-
 var Lang = (function() {
 
 	var danish = {
-		happy: "glad",
-		bastille: "bastilledagen",
+		happy: "Glad",
+		bastille: "Bastilledagen",
 		day: "",
 		to: "til",
 		someone: "nogen",

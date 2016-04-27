@@ -1,7 +1,3 @@
-// main content
-var mainContent = document.getElementById('content');
-
-
 // user input in the textarea field
 var userInput = document.getElementById('message');
 
@@ -22,10 +18,8 @@ var spanishPerson = document.getElementById('spanish');
 // next, it checks to see which radio button is checked, then it will run the translate button by
 // passing the users message into the checked IFFE
 var translateButton = document.getElementById('button').addEventListener("click", function(MouseEvent) {
-	console.log("event", MouseEvent);
 	var message = userInput.value;
 	message = message.split(" ");
-	console.log("The users array: ", message);
 	if (frenchPerson.checked) {
 		Lang.transFrench(message);
 	} else if (danishPerson.checked) {
@@ -35,17 +29,16 @@ var translateButton = document.getElementById('button').addEventListener("click"
 	}
 });
 
-// we need to return 'message'?
 
-// users translated output
+// Print function, takes the outputs innerHTML and adds the translation
 var userOutput = document.getElementById('output');
 
 function printTranslation(translation) {
 	userOutput.innerHTML = "<p>" + translation + "</p>";
 }
 
-// Translate function
 
+// Translate function
 function translate(input, language) {
 		var output = "";
 		for (var i = 0; i < input.length; i++) {
