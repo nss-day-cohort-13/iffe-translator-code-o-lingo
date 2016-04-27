@@ -1,7 +1,5 @@
 var Lang = (function(augSpanish) {
 
-  // Happy Bastille Day to someone still stuck in a monarchy
-
   var spanishGreeting = {
     happy: "Feliz",
     bastille: "Bastilla",
@@ -13,10 +11,12 @@ var Lang = (function(augSpanish) {
     in: "en",
     a: "una",
     monarchy: "monarquía"
-  };
+    };
 
     augSpanish.transSpanish = function(input) {
       translate(input, spanishGreeting);
       }
-    return augSpanish;
+
+  return augSpanish;
+
 }(Lang));
