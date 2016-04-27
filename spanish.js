@@ -14,9 +14,9 @@ var Lang = (function(augSpanish) {
     a: "una",
     monarchy: "monarquía"
   };
-  return {
+
     augSpanish.transSpanish = function(input) {
       translate(input, spanishGreeting);
-    }
-  }
+      }
+    return augSpanish;
 }(Lang));
